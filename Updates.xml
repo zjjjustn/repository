@@ -5,34 +5,64 @@
  <PackageUpdate>
   <Name>Agent</Name>
   <DisplayName>PMSServiceAgent</DisplayName>
-  <Description>PMSServiceAgent是PMS Service采集服务在本地节点的代理程序，是连接IDExpert上位机和采集服务的桥梁，能够响应IDExpert下发的命令，向IDExpert发送本地实时状态和配置信息等数据。</Description>
-  <Version>1.1.2</Version>
-  <ReleaseDate>2024-05-09</ReleaseDate>
+  <Description>PMSServiceAgent，PMSServiceAgent 是 PMS Service 采集服务在本地的代理程序，它以服务的方式运行在后台，是连接 IDExpert 和 PMS Service 的桥梁。需要和 PMS Service 采集服务安装在同一台计算机上。</Description>
+  <Version>4.0.0.2383</Version>
+  <ReleaseDate>2024-08-26 09:26:28</ReleaseDate>
   <Default>true</Default>
+  <RequiresAdminRights>true</RequiresAdminRights>
   <Script>installscript.qs</Script>
-  <UpdateFile CompressedSize="18736515" UncompressedSize="68170201" OS="Any"/>
+  <UpdateFile CompressedSize="2596764" OS="Any" UncompressedSize="12199776"/>
   <DownloadableArchives>Agent.7z</DownloadableArchives>
   <Licenses>
-   <License name="PMSServiceAgent安装协议" file="Agent-license.txt"/>
+   <License file="Agent-license.txt" name="PMSServiceAgent安装协议"/>
   </Licenses>
-  <SHA1>fd52fdb619d55b1fc84cacc68e747a45c2a55189</SHA1>
+  <SHA1>a317f1665e9a5abd79fe8cf8541f7cea55a519bc</SHA1>
+ </PackageUpdate>
+ <PackageUpdate>
+  <Name>BaseLib</Name>
+  <DisplayName>BaseLib</DisplayName>
+  <Description>BaseLib，BaseLib 是 FDAA-IDExpert 的基础组件库，强烈建议安装更新。</Description>
+  <Version>4.0.0.2383</Version>
+  <ReleaseDate>2024-08-26 09:26:28</ReleaseDate>
+  <RequiresAdminRights>true</RequiresAdminRights>
+  <Script>installscript.qs</Script>
+  <Default>true</Default>
+  <UpdateFile CompressedSize="43135640" OS="Any" UncompressedSize="86310720"/>
+  <DownloadableArchives>BaseLib.7z</DownloadableArchives>
+  <SHA1>763152749e9986179d9c575e9c049398c80d7625</SHA1>
  </PackageUpdate>
  <PackageUpdate>
   <Name>IDExpert</Name>
   <DisplayName>IDExpert</DisplayName>
-  <Description>IDExpert 是整个功能升级过程中较为重要和容易入手的部分，IDExpert 代表 Intergrated Data Expert，全称为集成数据专家，能够对多个FDAA（Fast Data Acquisition Analysis）服务进行集中监视、配置与管理。&#xd;
-    </Description>
-  <Version>1.2.3</Version>
-  <ReleaseDate>2024-05-09</ReleaseDate>
+  <Description>Intergrated Data Expert，集成数据专家，可以对多个 FDAA 采集节点进行集中监视、配置与管理，也集成了数据建模、数据分析和处理功能。可以和PMS Service 采集服务运行在同一台计算机内，也可以单独部署。</Description>
+  <Version>4.0.0.2383</Version>
+  <ReleaseDate>2024-08-26 09:26:28</ReleaseDate>
   <Default>true</Default>
+  <RequiresAdminRights>true</RequiresAdminRights>
   <Script>installscript.qs</Script>
-  <UpdateFile CompressedSize="26632794" UncompressedSize="95145674" OS="Any"/>
+  <UpdateFile CompressedSize="10169859" OS="Any" UncompressedSize="35526367"/>
   <DownloadableArchives>IDExpert.7z</DownloadableArchives>
   <Licenses>
-   <License name="IDExpert安装协议" file="IDE-license.txt"/>
+   <License file="IDE-license.txt" name="IDExpert安装协议"/>
   </Licenses>
-  <SHA1>3ab95d799a31dfa257ab1b36f421298e2a3b49ee</SHA1>
+  <SHA1>59f04e9a3d509566e756042ae66654b57dd4c9fe</SHA1>
  </PackageUpdate>
- <SHA1>951a37353473f413fe79e56bbc423f48a239a1c8</SHA1>
- <MetadataName>2024-05-15-1341_meta.7z</MetadataName>
+ <PackageUpdate>
+  <Name>maintenancetool</Name>
+  <DisplayName>Maintenancetool</DisplayName>
+  <Description>用于软件维护与更新</Description>
+  <Version>4.0.0.2383</Version>
+  <ReleaseDate>2024-08-26 09:26:28</ReleaseDate>
+  <RequiresAdminRights>true</RequiresAdminRights>
+  <Script>installscript.qs</Script>
+  <Essential>true</Essential>
+  <Virtual>true</Virtual>
+  <ForcedInstallation>true</ForcedInstallation>
+  <ForcedUpdate>true</ForcedUpdate>
+  <UpdateFile CompressedSize="12191186" OS="Any" UncompressedSize="33565240"/>
+  <DownloadableArchives>content.7z</DownloadableArchives>
+  <SHA1>d78f538cdfbbd0d756c379b91e5287bc3d809b88</SHA1>
+ </PackageUpdate>
+ <SHA1>5f03ed1d3c2a483085072858f1b9fdb471958b58</SHA1>
+ <MetadataName>2024-08-26-0945_meta.7z</MetadataName>
 </Updates>
